@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Destroyable : MonoBehaviour
 {
+
+    [SerializeField] GameObject face;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +22,6 @@ public class Destroyable : MonoBehaviour
     private void OnMouseDown()
     {
         Destroy(gameObject);
+        Destroy(face);
     }
 }

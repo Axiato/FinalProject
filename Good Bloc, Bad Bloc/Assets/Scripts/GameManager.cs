@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,11 +21,12 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject restartButton;
     [SerializeField] GameObject mainMenuButton;
+    [SerializeField] GameObject nextLevelButton;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentTimer = Timer;
     }
 
     // Update is called once per frame
@@ -32,11 +35,12 @@ public class GameManager : MonoBehaviour
         if (isMoving && GameObject.FindGameObjectsWithTag("Bad").Length == 0)
         {
             currentTimer -= Time.deltaTime;
+            
             if (currentTimer > 0)
             {
                 return;
             }
-            else if (currentTimer <= 0)
+            else if (currentTimer <= 0 && !isGameOver)
             {
                 gameWin("You cleared all the Bad Blocs");
             }
@@ -68,14 +72,22 @@ public class GameManager : MonoBehaviour
         isGameOver = true;
         messageText.text = message;
         gameOverText.text = "Game Over";
+        mainMenuButton.SetActive(true);
+        restartButton.SetActive(true);
     }
 
     public void gameWin(string message)
     {
+        Debug.Log(message);
         isGameOver = true;
         messageText.text = message;
         gameOverText.text = "You Win";
+        mainMenuButton.SetActive(true);
+        nextLevelButton.SetActive(true);
     }
 
-
+    public void LevelSelect(int level) // main menu == 0
+    {
+        SceneManager.LoadScene(level);
+    }
 }
