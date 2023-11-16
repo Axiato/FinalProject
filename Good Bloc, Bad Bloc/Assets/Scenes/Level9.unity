@@ -285,8 +285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e4b677d1e5079544ab3231ee373b6f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Timer: 3
-  movementThreshold: 0
+  Timer: 1
+  movementThreshold: 0.1
   messageText: {fileID: 1436529452}
   gameOverText: {fileID: 969433461}
   restartButton: {fileID: 736929849}

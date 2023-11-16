@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 3832417537862842343}
   - component: {fileID: 1581813335713719743}
   - component: {fileID: 860969943357181189}
-  - component: {fileID: 4316031824496794166}
   - component: {fileID: 4400269179876497322}
+  - component: {fileID: 4063343125881567691}
   m_Layer: 0
   m_Name: (L)Neutral Circle 1
   m_TagString: Untagged
@@ -143,8 +143,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &4316031824496794166
-PolygonCollider2D:
+--- !u!247 &4400269179876497322
+ConstantForce2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6105546914436644420}
+  m_Enabled: 1
+  m_Force: {x: -9.81, y: 0}
+  m_RelativeForce: {x: 0, y: 0}
+  m_Torque: 0
+--- !u!58 &4063343125881567691
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -176,46 +187,8 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.09, y: 1.09}
-    newSize: {x: 1.09, y: 1.09}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.545, y: 0.175}
-      - {x: 0.505, y: 0.295}
-      - {x: 0.305, y: 0.505}
-      - {x: 0.185, y: 0.545}
-      - {x: -0.155, y: 0.545}
-      - {x: -0.185, y: 0.53499997}
-      - {x: -0.345, y: 0.465}
-      - {x: -0.475, y: 0.325}
-      - {x: -0.545, y: 0.185}
-      - {x: -0.545, y: -0.205}
-      - {x: -0.465, y: -0.345}
-      - {x: -0.305, y: -0.48499998}
-      - {x: -0.185, y: -0.545}
-      - {x: 0.175, y: -0.545}
-      - {x: 0.305, y: -0.49499997}
-      - {x: 0.505, y: -0.305}
-      - {x: 0.545, y: -0.16499999}
-  m_UseDelaunayMesh: 0
---- !u!247 &4400269179876497322
-ConstantForce2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6105546914436644420}
-  m_Enabled: 1
-  m_Force: {x: -9.81, y: 0}
-  m_RelativeForce: {x: 0, y: 0}
-  m_Torque: 0
+  serializedVersion: 2
+  m_Radius: 0.545
 --- !u!1001 &2491190593784580532
 PrefabInstance:
   m_ObjectHideFlags: 0

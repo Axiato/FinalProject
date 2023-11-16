@@ -10,10 +10,11 @@ public class GameManager : MonoBehaviour
 
     bool isGameOver = false;
     bool isMoving = true;
+    int numGood;
 
     [SerializeField] float Timer = 3f;
     private float currentTimer;
-    [SerializeField] float movementThreshold;
+    [SerializeField] float movementThreshold = 1.5f;
 
     [SerializeField] TextMeshProUGUI messageText;
     [SerializeField] TextMeshProUGUI gameOverText;
@@ -29,12 +30,18 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         currentTimer = Timer;
+        numGood = GameObject.FindGameObjectsWithTag("Good").Length;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isMoving && GameObject.FindGameObjectsWithTag("Bad").Length == 0)
+        Debug.Log(isMoving);
+        if (GameObject.FindGameObjectsWithTag("Good").Length != numGood)
+        {
+            gameOver("You killed a Good Bloc");
+        }
+        if (GameObject.FindGameObjectsWithTag("Bad").Length == 0)
         {
             currentTimer -= Time.deltaTime;
             
@@ -42,7 +49,7 @@ public class GameManager : MonoBehaviour
             {
                 return;
             }
-            else if (currentTimer <= 0 && !isGameOver)
+            else if (currentTimer <= 0 && !isGameOver && !isMoving)
             {
                 gameWin("Level Cleared");
             }
@@ -52,15 +59,15 @@ public class GameManager : MonoBehaviour
 
                 if (bloc.GetComponent<Rigidbody2D>().velocity.magnitude > movementThreshold)
                 {
+                    Debug.Log(bloc.GetComponent<Rigidbody2D>().velocity.magnitude > movementThreshold);
                     isMoving = true;
                     break;
                 }
 
             }
 
-            if (!isMoving)
+            if (isMoving)
             {
-                isMoving = true;
                 currentTimer = Timer;
             }
 

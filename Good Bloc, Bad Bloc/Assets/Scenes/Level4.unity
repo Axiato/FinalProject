@@ -2865,7 +2865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Timer: 1
-  movementThreshold: 0
+  movementThreshold: 0.1
   messageText: {fileID: 1325516462}
   gameOverText: {fileID: 819875336}
   restartButton: {fileID: 1347848795}

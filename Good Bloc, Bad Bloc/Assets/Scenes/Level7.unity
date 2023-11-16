@@ -1752,7 +1752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Timer: 1
-  movementThreshold: 0
+  movementThreshold: 0.1
   messageText: {fileID: 453539717}
   gameOverText: {fileID: 115745284}
   restartButton: {fileID: 1057524389}

@@ -3106,7 +3106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Timer: 1
-  movementThreshold: 0
+  movementThreshold: 0.1
   messageText: {fileID: 388683898}
   gameOverText: {fileID: 1926349124}
   restartButton: {fileID: 654969831}
@@ -3190,8 +3190,8 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1551185861}
   - {fileID: 519420032}
+  - {fileID: 1551185861}
   - {fileID: 1220904349}
   - {fileID: 1708811003}
   - {fileID: 446645396}

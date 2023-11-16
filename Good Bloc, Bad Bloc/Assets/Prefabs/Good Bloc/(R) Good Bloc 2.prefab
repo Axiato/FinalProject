@@ -50,47 +50,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6112234509516952324, guid: d1a66fb8873018d43b90fe8562434ba3, type: 3}
       propertyPath: m_Force.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6112234509516952324, guid: d1a66fb8873018d43b90fe8562434ba3, type: 3}
-      propertyPath: m_Force.y
-      value: -9.81
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638134905159004323, guid: d1a66fb8873018d43b90fe8562434ba3, type: 3}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
-      value: -0.5478971
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638134905159004323, guid: d1a66fb8873018d43b90fe8562434ba3, type: 3}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
-      value: 0.5415107
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638134905159004323, guid: d1a66fb8873018d43b90fe8562434ba3, type: 3}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
-      value: -0.5478971
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638134905159004323, guid: d1a66fb8873018d43b90fe8562434ba3, type: 3}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
-      value: -0.5415107
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638134905159004323, guid: d1a66fb8873018d43b90fe8562434ba3, type: 3}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
-      value: 0.54470396
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638134905159004323, guid: d1a66fb8873018d43b90fe8562434ba3, type: 3}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
-      value: -0.5415108
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638134905159004323, guid: d1a66fb8873018d43b90fe8562434ba3, type: 3}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
-      value: 0.5542834
-      objectReference: {fileID: 0}
-    - target: {fileID: 6638134905159004323, guid: d1a66fb8873018d43b90fe8562434ba3, type: 3}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
-      value: 0.54470384
+      value: 9.81
       objectReference: {fileID: 0}
     - target: {fileID: 7248219730260904726, guid: d1a66fb8873018d43b90fe8562434ba3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7248219730260904726, guid: d1a66fb8873018d43b90fe8562434ba3, type: 3}
       propertyPath: m_LocalRotation.x
@@ -102,15 +66,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7248219730260904726, guid: d1a66fb8873018d43b90fe8562434ba3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7248219730260904726, guid: d1a66fb8873018d43b90fe8562434ba3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 8864694116763371312, guid: d1a66fb8873018d43b90fe8562434ba3, type: 3}
       propertyPath: m_Name
-      value: (D) Good Bloc 1
+      value: (R) Good Bloc 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

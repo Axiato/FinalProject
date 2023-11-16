@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5981201840188036345}
   - component: {fileID: 5006844770164659452}
   - component: {fileID: -308662413612028152}
-  - component: {fileID: 1066126482976597050}
   - component: {fileID: 5111563257120979771}
+  - component: {fileID: -6367602137849870277}
   m_Layer: 0
   m_Name: WoodCircle
   m_TagString: Untagged
@@ -114,8 +114,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!60 &1066126482976597050
-PolygonCollider2D:
+--- !u!114 &5111563257120979771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5627125703208900680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3802ba4fe703e8a48a3e2540afe38261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  face: {fileID: 0}
+--- !u!58 &-6367602137849870277
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -147,40 +160,5 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.7, y: 0.7}
-    newSize: {x: 0.7, y: 0.7}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.25, y: 0.31}
-      - {x: 0.17999999, y: 0.35}
-      - {x: -0.17999999, y: 0.35}
-      - {x: -0.29, y: 0.25}
-      - {x: -0.35, y: 0.17}
-      - {x: -0.35, y: -0.17}
-      - {x: -0.31, y: -0.25}
-      - {x: -0.14, y: -0.35}
-      - {x: 0.14999999, y: -0.35}
-      - {x: 0.22999999, y: -0.31}
-      - {x: 0.35, y: -0.16}
-      - {x: 0.35, y: 0.16}
-  m_UseDelaunayMesh: 0
---- !u!114 &5111563257120979771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5627125703208900680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3802ba4fe703e8a48a3e2540afe38261, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  face: {fileID: 0}
+  serializedVersion: 2
+  m_Radius: 0.35

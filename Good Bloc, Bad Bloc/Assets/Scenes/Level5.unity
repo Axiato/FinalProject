@@ -1064,11 +1064,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4245359010497659556, guid: 61e8be846efac814bbc57cfec4367f97, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.98
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 4245359010497659556, guid: 61e8be846efac814bbc57cfec4367f97, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6265607
+      value: -1.6
       objectReference: {fileID: 0}
     - target: {fileID: 4245359010497659556, guid: 61e8be846efac814bbc57cfec4367f97, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2305,7 +2305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Timer: 1
-  movementThreshold: 0
+  movementThreshold: 0.1
   messageText: {fileID: 1188212589}
   gameOverText: {fileID: 469472994}
   restartButton: {fileID: 1775562548}
