@@ -3206,6 +3206,8 @@ MonoBehaviour:
   restartButton: {fileID: 0}
   mainMenuButton: {fileID: 0}
   nextLevelButton: {fileID: 0}
+  mainMenuButton2: {fileID: 0}
+  restartButton2: {fileID: 0}
 --- !u!1 &1126377321
 GameObject:
   m_ObjectHideFlags: 0
@@ -4626,7 +4628,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1548579855
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4694,11 +4696,11 @@ MonoBehaviour:
       - m_Target: {fileID: 943995388}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: LevelSelect
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 11
           m_FloatArgument: 0
           m_StringArgument: Level1
           m_BoolArgument: 0
@@ -4759,7 +4761,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1654431380
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4827,11 +4829,11 @@ MonoBehaviour:
       - m_Target: {fileID: 943995388}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: LevelSelect
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 12
           m_FloatArgument: 0
           m_StringArgument: Level1
           m_BoolArgument: 0
@@ -5026,7 +5028,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1826558651
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5094,11 +5096,11 @@ MonoBehaviour:
       - m_Target: {fileID: 943995388}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: LevelSelect
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 13
           m_FloatArgument: 0
           m_StringArgument: Level1
           m_BoolArgument: 0

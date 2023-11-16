@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour
 {
 
     bool isGameOver = false;
-    bool badRemain = true;
     bool isMoving = true;
 
     [SerializeField] float Timer = 3f;
@@ -22,6 +21,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject restartButton;
     [SerializeField] GameObject mainMenuButton;
     [SerializeField] GameObject nextLevelButton;
+    [SerializeField] GameObject mainMenuButton2;
+    [SerializeField] GameObject restartButton2;
+
 
     // Start is called before the first frame update
     void Start()
@@ -42,7 +44,7 @@ public class GameManager : MonoBehaviour
             }
             else if (currentTimer <= 0 && !isGameOver)
             {
-                gameWin("You cleared all the Bad Blocs");
+                gameWin("Level Cleared");
             }
             isMoving = false;
             foreach (GameObject bloc in GameObject.FindGameObjectsWithTag("Good"))
@@ -74,6 +76,8 @@ public class GameManager : MonoBehaviour
         gameOverText.text = "Game Over";
         mainMenuButton.SetActive(true);
         restartButton.SetActive(true);
+        mainMenuButton2.SetActive(false);
+        restartButton2.SetActive(false);
     }
 
     public void gameWin(string message)
@@ -84,6 +88,8 @@ public class GameManager : MonoBehaviour
         gameOverText.text = "You Win";
         mainMenuButton.SetActive(true);
         nextLevelButton.SetActive(true);
+        mainMenuButton2.SetActive(false);
+        restartButton2.SetActive(false);
     }
 
     public void LevelSelect(int level) // main menu == 0
